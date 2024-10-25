@@ -12,7 +12,7 @@ def initials_generator(personsName):
     intials_str = '. '.join(intials_p) + '.'
     return intials_str  
 
-personsName = input('Enter the users first, middle, and last name')
+personsName = input('Enter the user first, middle, and last name')
 
 initials = initials_generator(personsName)
 
