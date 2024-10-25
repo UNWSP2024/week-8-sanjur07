@@ -15,7 +15,7 @@ def initials_generator(personsName):
 try:
     personsName = input('Enter the user first, middle, and last name')
 except EOFError:
-    personName = "John William Smith"
+    personsName = "John William Smith"
 
 
 initials = initials_generator(personsName)
