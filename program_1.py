@@ -12,12 +12,11 @@ def initials_generator(personsName):
     intials_str = '. '.join(intials_p) + '.'
     return intials_str  
 
-while True:
-    try:
-        personsName = input('Enter the user first, middle, and last name')
-    except EOFError:
-        continue
-    break
+try:
+    personsName = input('Enter the user first, middle, and last name')
+except EOFError:
+    personName = "John William Smith"
+
 
 initials = initials_generator(personsName)
 
