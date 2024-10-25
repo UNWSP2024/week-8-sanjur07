@@ -7,12 +7,16 @@
 
 def initials_generator(personsName):
 
-    personsInitials = ""
-    #    Add your logic here
+    name_parts = personsName.split()
+    intials_p = [name[0].upper() for name in name_parts]
+    intials_str = '. '.join(intials_p) + '.'
+    return intials_str  
 
-    return personsInitials.strip()
+try:
+    personsName = input('Enter the user first, middle, and last name')
+except EOFError:
+    personsName = "John William Smith"
 
-personsName = input('Enter the users first, middle, and last name')
 
 initials = initials_generator(personsName)
 
