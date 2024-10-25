@@ -17,9 +17,3 @@ def word_separator(sentence):
     result = result .capitalize()
     return result
 # Example usage
-
-sentence = "StopAndSmellTheRoses"
-
-new_sentence = word_separator(sentence)
-
-print(new_sentence)
